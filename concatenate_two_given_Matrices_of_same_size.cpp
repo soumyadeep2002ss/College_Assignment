@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -27,7 +28,7 @@ int main()
     {
         for (j = 0; j < n; j++)
         {
-            cout << A[i][j] << " ";
+            cout << A[i][j] << setw(3);
         }
         cout << "\n";
     }
@@ -36,7 +37,7 @@ int main()
     {
         for (j = 0; j < n; j++)
         {
-            cout << B[i][j] << " ";
+            cout << B[i][j] << setw(3);
         }
         cout << "\n";
     }
@@ -54,7 +55,7 @@ int main()
     {
         for (j = 0; j < 2 * n; j++)
         {
-            cout << store[i][j] << " ";
+            cout << store[i][j] << setw(3);
         }
         cout << "\n";
     }
